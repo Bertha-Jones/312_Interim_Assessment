@@ -71,7 +71,7 @@
             // 
             // logInButton
             // 
-            this.logInButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(118)))));
+            this.logInButton.BackColor = System.Drawing.Color.Gold;
             this.logInButton.ForeColor = System.Drawing.Color.Black;
             this.logInButton.Location = new System.Drawing.Point(269, 342);
             this.logInButton.Name = "logInButton";
@@ -98,7 +98,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.Color.Gold;
             this.label2.Location = new System.Drawing.Point(133, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 20);
@@ -122,7 +122,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.ForeColor = System.Drawing.Color.Gold;
             this.label3.Location = new System.Drawing.Point(133, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 20);
@@ -131,6 +131,7 @@
             // 
             // emailTxt
             // 
+            this.emailTxt.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.emailTxt.Location = new System.Drawing.Point(118, 135);
             this.emailTxt.Name = "emailTxt";
             this.emailTxt.Size = new System.Drawing.Size(281, 27);
@@ -163,6 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(30)))), ((int)(((byte)(48)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1041, 609);
             this.Controls.Add(this.attendantIDTxt);
             this.Controls.Add(this.roleTxt);

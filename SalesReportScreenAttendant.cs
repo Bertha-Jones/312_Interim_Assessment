@@ -94,5 +94,10 @@ namespace InventorySystem2
         {
             Application.Exit();
         }
+
+        private void SalesReportScreenAttendant_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

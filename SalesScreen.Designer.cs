@@ -92,7 +92,7 @@
             // 
             // productNameTxt
             // 
-            this.productNameTxt.BackColor = System.Drawing.Color.AliceBlue;
+            this.productNameTxt.BackColor = System.Drawing.Color.Gold;
             this.productNameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productNameTxt.ForeColor = System.Drawing.Color.Black;
             this.productNameTxt.Location = new System.Drawing.Point(17, 37);
@@ -155,7 +155,7 @@
             // 
             // sTotaltxt
             // 
-            this.sTotaltxt.BackColor = System.Drawing.Color.AliceBlue;
+            this.sTotaltxt.BackColor = System.Drawing.Color.Gold;
             this.sTotaltxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sTotaltxt.ForeColor = System.Drawing.Color.Black;
             this.sTotaltxt.Location = new System.Drawing.Point(728, 44);
@@ -176,7 +176,7 @@
             // 
             // saleQuantityTxt
             // 
-            this.saleQuantityTxt.BackColor = System.Drawing.Color.AliceBlue;
+            this.saleQuantityTxt.BackColor = System.Drawing.Color.Gold;
             this.saleQuantityTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.saleQuantityTxt.ForeColor = System.Drawing.Color.Black;
             this.saleQuantityTxt.Location = new System.Drawing.Point(316, 37);
@@ -256,7 +256,7 @@
             // productDataGridView
             // 
             this.productDataGridView.AllowUserToOrderColumns = true;
-            this.productDataGridView.BackgroundColor = System.Drawing.Color.BurlyWood;
+            this.productDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.productDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productDataGridView.GridColor = System.Drawing.Color.MediumTurquoise;
@@ -290,7 +290,7 @@
             // 
             // stockDataGridView
             // 
-            this.stockDataGridView.BackgroundColor = System.Drawing.Color.AliceBlue;
+            this.stockDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.stockDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stockDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.stockDataGridView.GridColor = System.Drawing.Color.Black;
@@ -303,7 +303,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel8);
@@ -375,7 +375,7 @@
             // 
             // sUnitPriceTxt
             // 
-            this.sUnitPriceTxt.BackColor = System.Drawing.Color.AliceBlue;
+            this.sUnitPriceTxt.BackColor = System.Drawing.Color.Gold;
             this.sUnitPriceTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sUnitPriceTxt.ForeColor = System.Drawing.Color.Black;
             this.sUnitPriceTxt.Location = new System.Drawing.Point(731, 11);
@@ -551,7 +551,7 @@
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel14.Controls.Add(this.productDataGridView);
             this.panel14.Location = new System.Drawing.Point(679, 305);
@@ -584,19 +584,20 @@
             // attendantNameTxt
             // 
             this.attendantNameTxt.AutoSize = true;
-            this.attendantNameTxt.Font = new System.Drawing.Font("Algerian", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.attendantNameTxt.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.attendantNameTxt.Location = new System.Drawing.Point(49, 18);
             this.attendantNameTxt.Name = "attendantNameTxt";
-            this.attendantNameTxt.Size = new System.Drawing.Size(197, 22);
+            this.attendantNameTxt.Size = new System.Drawing.Size(178, 23);
             this.attendantNameTxt.TabIndex = 107;
             this.attendantNameTxt.Text = "Attendant Name";
             this.attendantNameTxt.Click += new System.EventHandler(this.attendantNameTxt_Click);
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel17.BackColor = System.Drawing.Color.Gold;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel17.Controls.Add(this.attendantNameTxt);
+            this.panel17.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.panel17.Location = new System.Drawing.Point(103, 26);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(322, 55);

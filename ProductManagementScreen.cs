@@ -295,5 +295,10 @@ namespace InventorySystem2
             SalesReportScreen user = new SalesReportScreen();
             user.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

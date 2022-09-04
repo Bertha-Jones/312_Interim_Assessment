@@ -40,8 +40,6 @@
             this.userDataGridView = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.adminNameTxt = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -91,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(995, 37);
+            this.label2.Location = new System.Drawing.Point(1015, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 20;
@@ -99,9 +97,9 @@
             // 
             // salesButton
             // 
-            this.salesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.salesButton.ForeColor = System.Drawing.Color.White;
-            this.salesButton.Location = new System.Drawing.Point(1065, 77);
+            this.salesButton.BackColor = System.Drawing.Color.Gold;
+            this.salesButton.ForeColor = System.Drawing.Color.Black;
+            this.salesButton.Location = new System.Drawing.Point(1062, 61);
             this.salesButton.Name = "salesButton";
             this.salesButton.Size = new System.Drawing.Size(171, 36);
             this.salesButton.TabIndex = 19;
@@ -111,9 +109,9 @@
             // 
             // stockManagementButton
             // 
-            this.stockManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.stockManagementButton.ForeColor = System.Drawing.Color.White;
-            this.stockManagementButton.Location = new System.Drawing.Point(820, 77);
+            this.stockManagementButton.BackColor = System.Drawing.Color.Gold;
+            this.stockManagementButton.ForeColor = System.Drawing.Color.Black;
+            this.stockManagementButton.Location = new System.Drawing.Point(817, 61);
             this.stockManagementButton.Name = "stockManagementButton";
             this.stockManagementButton.Size = new System.Drawing.Size(171, 36);
             this.stockManagementButton.TabIndex = 18;
@@ -123,9 +121,9 @@
             // 
             // categoryManagementButton
             // 
-            this.categoryManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.categoryManagementButton.ForeColor = System.Drawing.Color.White;
-            this.categoryManagementButton.Location = new System.Drawing.Point(569, 77);
+            this.categoryManagementButton.BackColor = System.Drawing.Color.Gold;
+            this.categoryManagementButton.ForeColor = System.Drawing.Color.Black;
+            this.categoryManagementButton.Location = new System.Drawing.Point(566, 61);
             this.categoryManagementButton.Name = "categoryManagementButton";
             this.categoryManagementButton.Size = new System.Drawing.Size(171, 36);
             this.categoryManagementButton.TabIndex = 17;
@@ -135,9 +133,9 @@
             // 
             // ProductManagemetButton
             // 
-            this.ProductManagemetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.ProductManagemetButton.ForeColor = System.Drawing.Color.White;
-            this.ProductManagemetButton.Location = new System.Drawing.Point(285, 77);
+            this.ProductManagemetButton.BackColor = System.Drawing.Color.Gold;
+            this.ProductManagemetButton.ForeColor = System.Drawing.Color.Black;
+            this.ProductManagemetButton.Location = new System.Drawing.Point(282, 61);
             this.ProductManagemetButton.Name = "ProductManagemetButton";
             this.ProductManagemetButton.Size = new System.Drawing.Size(171, 36);
             this.ProductManagemetButton.TabIndex = 16;
@@ -147,9 +145,9 @@
             // 
             // userManagementButton
             // 
-            this.userManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.userManagementButton.BackColor = System.Drawing.Color.Goldenrod;
             this.userManagementButton.ForeColor = System.Drawing.Color.White;
-            this.userManagementButton.Location = new System.Drawing.Point(28, 77);
+            this.userManagementButton.Location = new System.Drawing.Point(25, 61);
             this.userManagementButton.Name = "userManagementButton";
             this.userManagementButton.Size = new System.Drawing.Size(171, 36);
             this.userManagementButton.TabIndex = 15;
@@ -175,64 +173,44 @@
             this.userDataGridView.Name = "userDataGridView";
             this.userDataGridView.RowHeadersWidth = 51;
             this.userDataGridView.RowTemplate.Height = 29;
-            this.userDataGridView.Size = new System.Drawing.Size(725, 323);
+            this.userDataGridView.Size = new System.Drawing.Size(797, 485);
             this.userDataGridView.TabIndex = 64;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.salesButton);
             this.panel5.Controls.Add(this.adminNameTxt);
+            this.panel5.Controls.Add(this.stockManagementButton);
+            this.panel5.Controls.Add(this.ProductManagemetButton);
+            this.panel5.Controls.Add(this.categoryManagementButton);
+            this.panel5.Controls.Add(this.userManagementButton);
             this.panel5.Location = new System.Drawing.Point(0, 1);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1262, 57);
+            this.panel5.Size = new System.Drawing.Size(1262, 112);
             this.panel5.TabIndex = 92;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.label8.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.BackColor = System.Drawing.Color.Gold;
+            this.label8.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1212, 20);
+            this.label8.Location = new System.Drawing.Point(1209, 11);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 23);
+            this.label8.Size = new System.Drawing.Size(23, 23);
             this.label8.TabIndex = 23;
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 23);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "[^]";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(47, 24);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 20);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Home Page";
-            // 
             // adminNameTxt
             // 
             this.adminNameTxt.AutoSize = true;
-            this.adminNameTxt.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.adminNameTxt.ForeColor = System.Drawing.Color.Orange;
-            this.adminNameTxt.Location = new System.Drawing.Point(529, 21);
+            this.adminNameTxt.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.adminNameTxt.ForeColor = System.Drawing.Color.Gold;
+            this.adminNameTxt.Location = new System.Drawing.Point(504, 8);
             this.adminNameTxt.Name = "adminNameTxt";
             this.adminNameTxt.Size = new System.Drawing.Size(131, 23);
             this.adminNameTxt.TabIndex = 14;
@@ -240,15 +218,16 @@
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.Gold;
             this.panel10.Controls.Add(this.userDataGridView);
-            this.panel10.Location = new System.Drawing.Point(420, 162);
+            this.panel10.Location = new System.Drawing.Point(420, 119);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(770, 382);
+            this.panel10.Size = new System.Drawing.Size(830, 551);
             this.panel10.TabIndex = 93;
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.panel11.BackColor = System.Drawing.Color.Gold;
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel13);
             this.panel11.Controls.Add(this.panel14);
@@ -284,7 +263,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel12.BackColor = System.Drawing.Color.Black;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel12.Location = new System.Drawing.Point(40, 464);
             this.panel12.Name = "panel12";
@@ -293,7 +272,7 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel13.BackColor = System.Drawing.Color.Black;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel13.Location = new System.Drawing.Point(39, 401);
             this.panel13.Name = "panel13";
@@ -302,7 +281,7 @@
             // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel14.BackColor = System.Drawing.Color.Black;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel14.Location = new System.Drawing.Point(40, 345);
             this.panel14.Name = "panel14";
@@ -311,7 +290,7 @@
             // 
             // panel15
             // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel15.BackColor = System.Drawing.Color.Black;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel15.Location = new System.Drawing.Point(40, 276);
             this.panel15.Name = "panel15";
@@ -320,7 +299,7 @@
             // 
             // panel16
             // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel16.BackColor = System.Drawing.Color.Black;
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel16.Location = new System.Drawing.Point(40, 210);
             this.panel16.Name = "panel16";
@@ -329,7 +308,7 @@
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel17.BackColor = System.Drawing.Color.Black;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel17.Location = new System.Drawing.Point(40, 146);
             this.panel17.Name = "panel17";
@@ -338,7 +317,7 @@
             // 
             // panel18
             // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel18.BackColor = System.Drawing.Color.Black;
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel18.Location = new System.Drawing.Point(40, 78);
             this.panel18.Name = "panel18";
@@ -347,7 +326,7 @@
             // 
             // dateTxt
             // 
-            this.dateTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.dateTxt.BackColor = System.Drawing.Color.Gold;
             this.dateTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dateTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateTxt.Location = new System.Drawing.Point(40, 121);
@@ -358,6 +337,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(54, 353);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(39, 20);
@@ -366,7 +346,7 @@
             // 
             // roleTxt
             // 
-            this.roleTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.roleTxt.BackColor = System.Drawing.Color.Gold;
             this.roleTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.roleTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.roleTxt.Location = new System.Drawing.Point(39, 376);
@@ -376,7 +356,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(118)))));
+            this.button1.BackColor = System.Drawing.Color.Goldenrod;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(141, 483);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 42);
@@ -387,7 +368,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.Goldenrod;
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(241, 483);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 42);
@@ -414,6 +396,8 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Gold;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(54, 98);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(94, 20);
@@ -422,7 +406,7 @@
             // 
             // emailTxt
             // 
-            this.emailTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.emailTxt.BackColor = System.Drawing.Color.Gold;
             this.emailTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.emailTxt.Location = new System.Drawing.Point(40, 185);
@@ -433,6 +417,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(54, 162);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(46, 20);
@@ -441,7 +426,7 @@
             // 
             // phoneNumberTxt
             // 
-            this.phoneNumberTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.phoneNumberTxt.BackColor = System.Drawing.Color.Gold;
             this.phoneNumberTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.phoneNumberTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.phoneNumberTxt.Location = new System.Drawing.Point(39, 320);
@@ -452,6 +437,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(54, 295);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(108, 20);
@@ -461,6 +447,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label16.Location = new System.Drawing.Point(54, 416);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 20);
@@ -469,7 +456,7 @@
             // 
             // genderTxt
             // 
-            this.genderTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.genderTxt.BackColor = System.Drawing.Color.Gold;
             this.genderTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.genderTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.genderTxt.Location = new System.Drawing.Point(39, 439);
@@ -501,7 +488,7 @@
             // 
             // userNameTxt
             // 
-            this.userNameTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.userNameTxt.BackColor = System.Drawing.Color.Gold;
             this.userNameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.userNameTxt.Location = new System.Drawing.Point(39, 53);
@@ -512,6 +499,8 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Gold;
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label17.Location = new System.Drawing.Point(54, 30);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(82, 20);
@@ -521,6 +510,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label18.Location = new System.Drawing.Point(54, 228);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(70, 20);
@@ -529,7 +519,7 @@
             // 
             // passwordTxt
             // 
-            this.passwordTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.passwordTxt.BackColor = System.Drawing.Color.Gold;
             this.passwordTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.passwordTxt.Location = new System.Drawing.Point(39, 251);
@@ -539,8 +529,9 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Blue;
+            this.button4.BackColor = System.Drawing.Color.Goldenrod;
             this.button4.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Location = new System.Drawing.Point(41, 483);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 42);
@@ -555,14 +546,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 679);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.salesButton);
-            this.Controls.Add(this.stockManagementButton);
-            this.Controls.Add(this.categoryManagementButton);
-            this.Controls.Add(this.ProductManagemetButton);
-            this.Controls.Add(this.userManagementButton);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -593,8 +580,6 @@
         private DataGridView userDataGridView;
         private Panel panel5;
         private Label label8;
-        private Label label7;
-        private Label label10;
         private Label adminNameTxt;
         private Panel panel10;
         private Panel panel11;

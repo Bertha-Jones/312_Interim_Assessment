@@ -10,7 +10,7 @@ namespace InventorySystem2
 {
     internal class database
     {
-        public static string connectionString = "server=localhost ; database=shopinventory ; uid=root ; password=\"\"; convert zero datetime=True ;";
+        public static string connectionString = "server=localhost ; database=inventorysystem ; uid=root ; password=\"\"; convert zero datetime=True ;";
         public static MySqlConnection connection = new MySqlConnection(connectionString);
 
         //here we call a function to open and close the connection to the database
@@ -22,11 +22,12 @@ namespace InventorySystem2
                 if (connection.State == System.Data.ConnectionState.Closed)
                 {
                     connection.Open();
+                    MessageBox.Show("Connection Opened Successfully");
                 }
             }
             catch (Exception ex)
             {
-                WriteLine("Unable to connect to the database");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -41,8 +42,7 @@ namespace InventorySystem2
             }
             catch (Exception ex)
             {
-                WriteLine("Unable to connect to the database");
-            }
+                MessageBox.Show(ex.Message);            }
         }
     }
 }

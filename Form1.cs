@@ -103,7 +103,7 @@ namespace InventorySystem2
                     { 
                    
 
-                        string countQuery = "select count(*) from  userT where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
+                        string countQuery = "select count(*) from  user where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
                         command = new MySqlCommand(countQuery, database.connection);
                         Int32 count = Convert.ToInt32(command.ExecuteScalar());
                         if (count > 0)
@@ -122,7 +122,7 @@ namespace InventorySystem2
 
                             if (adminButton.Checked)
                             {
-                                string sql = "select * from userT where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
+                                string sql = "select * from user where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
                                 command = new MySqlCommand(sql, database.connection);
                                 using (MySqlDataReader reader = command.ExecuteReader())
                                 {
@@ -134,7 +134,7 @@ namespace InventorySystem2
                                 if(roleTxt.Text == "Administrator")
                                 {
                                     
-                                    string sql2 = "select * from userT where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
+                                    string sql2 = "select * from user where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
                                     command = new MySqlCommand(sql2, database.connection);
                                     using (MySqlDataReader reader = command.ExecuteReader())
                                     {
@@ -163,7 +163,7 @@ namespace InventorySystem2
                             } 
                             else if (attendantButton.Checked)
                             {
-                                string sql = "select * from userT where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
+                                string sql = "select * from user where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
                                 command = new MySqlCommand(sql, database.connection);
                                 using (MySqlDataReader reader = command.ExecuteReader())
                                 {
@@ -175,7 +175,7 @@ namespace InventorySystem2
                                 if (roleTxt.Text == "Attendant")
                                 {
                                     this.Hide();
-                                    string sql2 = "select * from userTj where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
+                                    string sql2 = "select * from user where email = '" + emailTxt.Text + "' and password = '" + passwordTxt.Text + "' ";
                                     command = new MySqlCommand(sql2, database.connection);
                                     using (MySqlDataReader reader = command.ExecuteReader())
                                     {

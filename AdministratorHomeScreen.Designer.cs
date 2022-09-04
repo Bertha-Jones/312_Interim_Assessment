@@ -54,12 +54,12 @@
             // 
             // salesButton
             // 
-            this.salesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.salesButton.BackColor = System.Drawing.Color.Black;
             this.salesButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.salesButton.ForeColor = System.Drawing.Color.White;
-            this.salesButton.Location = new System.Drawing.Point(1062, 77);
+            this.salesButton.ForeColor = System.Drawing.Color.Gold;
+            this.salesButton.Location = new System.Drawing.Point(464, 606);
             this.salesButton.Name = "salesButton";
-            this.salesButton.Size = new System.Drawing.Size(171, 36);
+            this.salesButton.Size = new System.Drawing.Size(331, 80);
             this.salesButton.TabIndex = 12;
             this.salesButton.Text = "Sales";
             this.salesButton.UseVisualStyleBackColor = false;
@@ -67,12 +67,12 @@
             // 
             // stockManagementButton
             // 
-            this.stockManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.stockManagementButton.BackColor = System.Drawing.Color.Black;
             this.stockManagementButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.stockManagementButton.ForeColor = System.Drawing.Color.White;
-            this.stockManagementButton.Location = new System.Drawing.Point(825, 77);
+            this.stockManagementButton.ForeColor = System.Drawing.Color.Gold;
+            this.stockManagementButton.Location = new System.Drawing.Point(464, 465);
             this.stockManagementButton.Name = "stockManagementButton";
-            this.stockManagementButton.Size = new System.Drawing.Size(171, 36);
+            this.stockManagementButton.Size = new System.Drawing.Size(331, 80);
             this.stockManagementButton.TabIndex = 11;
             this.stockManagementButton.Text = "Stock Management";
             this.stockManagementButton.UseVisualStyleBackColor = false;
@@ -80,12 +80,12 @@
             // 
             // categoryManagementButton
             // 
-            this.categoryManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.categoryManagementButton.BackColor = System.Drawing.Color.Black;
             this.categoryManagementButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.categoryManagementButton.ForeColor = System.Drawing.Color.White;
-            this.categoryManagementButton.Location = new System.Drawing.Point(559, 77);
+            this.categoryManagementButton.ForeColor = System.Drawing.Color.Gold;
+            this.categoryManagementButton.Location = new System.Drawing.Point(464, 351);
             this.categoryManagementButton.Name = "categoryManagementButton";
-            this.categoryManagementButton.Size = new System.Drawing.Size(171, 36);
+            this.categoryManagementButton.Size = new System.Drawing.Size(331, 80);
             this.categoryManagementButton.TabIndex = 10;
             this.categoryManagementButton.Text = "Category Management";
             this.categoryManagementButton.UseVisualStyleBackColor = false;
@@ -93,12 +93,12 @@
             // 
             // ProductManagemetButton
             // 
-            this.ProductManagemetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.ProductManagemetButton.BackColor = System.Drawing.Color.Black;
             this.ProductManagemetButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ProductManagemetButton.ForeColor = System.Drawing.Color.White;
-            this.ProductManagemetButton.Location = new System.Drawing.Point(301, 77);
+            this.ProductManagemetButton.ForeColor = System.Drawing.Color.Gold;
+            this.ProductManagemetButton.Location = new System.Drawing.Point(464, 237);
             this.ProductManagemetButton.Name = "ProductManagemetButton";
-            this.ProductManagemetButton.Size = new System.Drawing.Size(171, 36);
+            this.ProductManagemetButton.Size = new System.Drawing.Size(331, 80);
             this.ProductManagemetButton.TabIndex = 9;
             this.ProductManagemetButton.Text = "Product Management";
             this.ProductManagemetButton.UseVisualStyleBackColor = false;
@@ -106,12 +106,12 @@
             // 
             // userManagementButton
             // 
-            this.userManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.userManagementButton.BackColor = System.Drawing.Color.Black;
             this.userManagementButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.userManagementButton.ForeColor = System.Drawing.Color.White;
-            this.userManagementButton.Location = new System.Drawing.Point(44, 77);
+            this.userManagementButton.ForeColor = System.Drawing.Color.Gold;
+            this.userManagementButton.Location = new System.Drawing.Point(464, 114);
             this.userManagementButton.Name = "userManagementButton";
-            this.userManagementButton.Size = new System.Drawing.Size(171, 36);
+            this.userManagementButton.Size = new System.Drawing.Size(331, 80);
             this.userManagementButton.TabIndex = 8;
             this.userManagementButton.Text = "User Management";
             this.userManagementButton.UseVisualStyleBackColor = false;
@@ -120,18 +120,19 @@
             // adminNameTxt
             // 
             this.adminNameTxt.AutoSize = true;
-            this.adminNameTxt.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.adminNameTxt.ForeColor = System.Drawing.Color.Orange;
+            this.adminNameTxt.BackColor = System.Drawing.Color.Transparent;
+            this.adminNameTxt.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.adminNameTxt.ForeColor = System.Drawing.Color.Gold;
             this.adminNameTxt.Location = new System.Drawing.Point(156, 22);
             this.adminNameTxt.Name = "adminNameTxt";
-            this.adminNameTxt.Size = new System.Drawing.Size(131, 23);
+            this.adminNameTxt.Size = new System.Drawing.Size(101, 24);
             this.adminNameTxt.TabIndex = 14;
             this.adminNameTxt.Text = "adminName";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.label2.BackColor = System.Drawing.Color.Gold;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1226, 9);
@@ -144,16 +145,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Gold;
             this.label3.Location = new System.Drawing.Point(44, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
+            this.label3.Size = new System.Drawing.Size(97, 20);
             this.label3.TabIndex = 16;
             this.label3.Text = "Welcome Back";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.adminNameTxt);
@@ -168,7 +171,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1262, 679);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1262, 726);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.salesButton);
             this.Controls.Add(this.stockManagementButton);

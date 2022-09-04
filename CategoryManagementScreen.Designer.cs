@@ -47,15 +47,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.descriptionTxt = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.removeButton = new System.Windows.Forms.Button();
-            this.addButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.categoryDataGridView = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.adminNameTxt = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -78,10 +76,10 @@
             // 
             // salesButton
             // 
-            this.salesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.salesButton.BackColor = System.Drawing.Color.Gold;
             this.salesButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.salesButton.ForeColor = System.Drawing.Color.White;
-            this.salesButton.Location = new System.Drawing.Point(1062, 77);
+            this.salesButton.ForeColor = System.Drawing.Color.Black;
+            this.salesButton.Location = new System.Drawing.Point(1034, 47);
             this.salesButton.Name = "salesButton";
             this.salesButton.Size = new System.Drawing.Size(171, 36);
             this.salesButton.TabIndex = 19;
@@ -91,10 +89,10 @@
             // 
             // stockManagementButton
             // 
-            this.stockManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.stockManagementButton.BackColor = System.Drawing.Color.Gold;
             this.stockManagementButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.stockManagementButton.ForeColor = System.Drawing.Color.White;
-            this.stockManagementButton.Location = new System.Drawing.Point(816, 77);
+            this.stockManagementButton.ForeColor = System.Drawing.Color.Black;
+            this.stockManagementButton.Location = new System.Drawing.Point(788, 47);
             this.stockManagementButton.Name = "stockManagementButton";
             this.stockManagementButton.Size = new System.Drawing.Size(171, 36);
             this.stockManagementButton.TabIndex = 18;
@@ -104,10 +102,10 @@
             // 
             // categoryManagementButton
             // 
-            this.categoryManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.categoryManagementButton.BackColor = System.Drawing.Color.Goldenrod;
             this.categoryManagementButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.categoryManagementButton.ForeColor = System.Drawing.Color.White;
-            this.categoryManagementButton.Location = new System.Drawing.Point(574, 77);
+            this.categoryManagementButton.ForeColor = System.Drawing.Color.Black;
+            this.categoryManagementButton.Location = new System.Drawing.Point(546, 47);
             this.categoryManagementButton.Name = "categoryManagementButton";
             this.categoryManagementButton.Size = new System.Drawing.Size(171, 36);
             this.categoryManagementButton.TabIndex = 17;
@@ -116,10 +114,10 @@
             // 
             // ProductManagemetButton
             // 
-            this.ProductManagemetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.ProductManagemetButton.BackColor = System.Drawing.Color.Gold;
             this.ProductManagemetButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ProductManagemetButton.ForeColor = System.Drawing.Color.White;
-            this.ProductManagemetButton.Location = new System.Drawing.Point(328, 77);
+            this.ProductManagemetButton.ForeColor = System.Drawing.Color.Black;
+            this.ProductManagemetButton.Location = new System.Drawing.Point(300, 47);
             this.ProductManagemetButton.Name = "ProductManagemetButton";
             this.ProductManagemetButton.Size = new System.Drawing.Size(171, 36);
             this.ProductManagemetButton.TabIndex = 16;
@@ -129,10 +127,10 @@
             // 
             // userManagementButton
             // 
-            this.userManagementButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.userManagementButton.BackColor = System.Drawing.Color.Gold;
             this.userManagementButton.Font = new System.Drawing.Font("Elephant", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.userManagementButton.ForeColor = System.Drawing.Color.White;
-            this.userManagementButton.Location = new System.Drawing.Point(73, 77);
+            this.userManagementButton.ForeColor = System.Drawing.Color.Black;
+            this.userManagementButton.Location = new System.Drawing.Point(45, 47);
             this.userManagementButton.Name = "userManagementButton";
             this.userManagementButton.Size = new System.Drawing.Size(171, 36);
             this.userManagementButton.TabIndex = 15;
@@ -142,7 +140,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label2);
@@ -152,9 +150,9 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.descriptionTxt);
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Location = new System.Drawing.Point(27, 138);
+            this.panel1.Location = new System.Drawing.Point(27, 105);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(319, 441);
+            this.panel1.Size = new System.Drawing.Size(405, 474);
             this.panel1.TabIndex = 14;
             // 
             // panel7
@@ -198,6 +196,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(20, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 20);
@@ -206,7 +205,7 @@
             // 
             // keyCodeTxt
             // 
-            this.keyCodeTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.keyCodeTxt.BackColor = System.Drawing.Color.Gold;
             this.keyCodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.keyCodeTxt.ForeColor = System.Drawing.SystemColors.Menu;
             this.keyCodeTxt.Location = new System.Drawing.Point(20, 95);
@@ -216,7 +215,7 @@
             // 
             // categoryNameTxt
             // 
-            this.categoryNameTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.categoryNameTxt.BackColor = System.Drawing.Color.Gold;
             this.categoryNameTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.categoryNameTxt.ForeColor = System.Drawing.SystemColors.Menu;
             this.categoryNameTxt.Location = new System.Drawing.Point(20, 36);
@@ -227,6 +226,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(35, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 20);
@@ -236,6 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(35, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(167, 20);
@@ -257,73 +258,77 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.panel2.Controls.Add(this.removeButton);
-            this.panel2.Controls.Add(this.addButton);
             this.panel2.Controls.Add(this.searchButton);
+            this.panel2.Controls.Add(this.addButton);
+            this.panel2.Controls.Add(this.removeButton);
             this.panel2.Controls.Add(this.UpdateButton);
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(27, 585);
+            this.panel2.Location = new System.Drawing.Point(28, 598);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1032, 67);
+            this.panel2.Size = new System.Drawing.Size(421, 67);
             this.panel2.TabIndex = 83;
-            // 
-            // removeButton
-            // 
-            this.removeButton.Location = new System.Drawing.Point(212, 14);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(94, 42);
-            this.removeButton.TabIndex = 58;
-            this.removeButton.Text = "Remove";
-            this.removeButton.UseVisualStyleBackColor = true;
-            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
-            // 
-            // addButton
-            // 
-            this.addButton.Location = new System.Drawing.Point(12, 14);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(94, 42);
-            this.addButton.TabIndex = 42;
-            this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(312, 14);
+            this.searchButton.BackColor = System.Drawing.Color.Goldenrod;
+            this.searchButton.Location = new System.Drawing.Point(310, 12);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(94, 42);
             this.searchButton.TabIndex = 57;
             this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.Color.Goldenrod;
+            this.addButton.Location = new System.Drawing.Point(3, 12);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(94, 42);
+            this.addButton.TabIndex = 42;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // removeButton
+            // 
+            this.removeButton.BackColor = System.Drawing.Color.Goldenrod;
+            this.removeButton.Location = new System.Drawing.Point(210, 12);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(94, 42);
+            this.removeButton.TabIndex = 58;
+            this.removeButton.Text = "Remove";
+            this.removeButton.UseVisualStyleBackColor = false;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(112, 14);
+            this.UpdateButton.BackColor = System.Drawing.Color.Goldenrod;
+            this.UpdateButton.Location = new System.Drawing.Point(107, 12);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(94, 42);
             this.UpdateButton.TabIndex = 59;
             this.UpdateButton.Text = "Update";
-            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.UseVisualStyleBackColor = false;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // categoryDataGridView
             // 
             this.categoryDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.categoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoryDataGridView.Location = new System.Drawing.Point(29, 23);
+            this.categoryDataGridView.Location = new System.Drawing.Point(14, 21);
             this.categoryDataGridView.Name = "categoryDataGridView";
             this.categoryDataGridView.RowHeadersWidth = 51;
             this.categoryDataGridView.RowTemplate.Height = 29;
-            this.categoryDataGridView.Size = new System.Drawing.Size(548, 387);
+            this.categoryDataGridView.Size = new System.Drawing.Size(765, 473);
             this.categoryDataGridView.TabIndex = 82;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.label5.BackColor = System.Drawing.Color.Gold;
             this.label5.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(1226, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(24, 23);
@@ -333,44 +338,24 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.adminNameTxt);
+            this.panel3.Controls.Add(this.categoryManagementButton);
+            this.panel3.Controls.Add(this.userManagementButton);
+            this.panel3.Controls.Add(this.ProductManagemetButton);
+            this.panel3.Controls.Add(this.salesButton);
+            this.panel3.Controls.Add(this.stockManagementButton);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1262, 57);
+            this.panel3.Size = new System.Drawing.Size(1262, 99);
             this.panel3.TabIndex = 22;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
-            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 23);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "[^]";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(47, 24);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 20);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Home Page";
             // 
             // adminNameTxt
             // 
             this.adminNameTxt.AutoSize = true;
-            this.adminNameTxt.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.adminNameTxt.ForeColor = System.Drawing.Color.Orange;
-            this.adminNameTxt.Location = new System.Drawing.Point(529, 21);
+            this.adminNameTxt.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.adminNameTxt.ForeColor = System.Drawing.Color.White;
+            this.adminNameTxt.Location = new System.Drawing.Point(554, 7);
             this.adminNameTxt.Name = "adminNameTxt";
             this.adminNameTxt.Size = new System.Drawing.Size(131, 23);
             this.adminNameTxt.TabIndex = 14;
@@ -378,11 +363,11 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.panel8.BackColor = System.Drawing.Color.Gold;
             this.panel8.Controls.Add(this.categoryDataGridView);
-            this.panel8.Location = new System.Drawing.Point(453, 138);
+            this.panel8.Location = new System.Drawing.Point(455, 105);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(606, 441);
+            this.panel8.Size = new System.Drawing.Size(795, 517);
             this.panel8.TabIndex = 84;
             // 
             // CategoryManagementScreen
@@ -391,16 +376,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 679);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.salesButton);
-            this.Controls.Add(this.stockManagementButton);
-            this.Controls.Add(this.categoryManagementButton);
-            this.Controls.Add(this.ProductManagemetButton);
-            this.Controls.Add(this.userManagementButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

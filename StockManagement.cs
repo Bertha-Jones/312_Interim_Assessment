@@ -327,5 +327,10 @@ namespace InventorySystem2
             SalesReportScreen user = new SalesReportScreen();
             user.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

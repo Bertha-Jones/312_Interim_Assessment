@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel10 = new System.Windows.Forms.Panel();
             this.salesDataGridView = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -61,14 +61,14 @@
             this.salesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.salesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.salesDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Cyan;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.salesDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Cyan;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.salesDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.salesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.salesDataGridView.GridColor = System.Drawing.Color.Red;
             this.salesDataGridView.Location = new System.Drawing.Point(16, 29);
@@ -91,23 +91,23 @@
             this.panel11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel11.Location = new System.Drawing.Point(26, 120);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(370, 118);
+            this.panel11.Size = new System.Drawing.Size(370, 171);
             this.panel11.TabIndex = 96;
             // 
             // panel16
             // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel16.BackColor = System.Drawing.Color.White;
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel16.Location = new System.Drawing.Point(35, 81);
+            this.panel16.Location = new System.Drawing.Point(32, 107);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(281, 2);
             this.panel16.TabIndex = 94;
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(14)))), ((int)(((byte)(41)))));
+            this.panel17.BackColor = System.Drawing.Color.White;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel17.Location = new System.Drawing.Point(35, 28);
+            this.panel17.Location = new System.Drawing.Point(32, 54);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(281, 2);
             this.panel17.TabIndex = 94;
@@ -117,7 +117,7 @@
             this.tillIDTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.tillIDTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tillIDTxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tillIDTxt.Location = new System.Drawing.Point(35, 56);
+            this.tillIDTxt.Location = new System.Drawing.Point(32, 82);
             this.tillIDTxt.Name = "tillIDTxt";
             this.tillIDTxt.Size = new System.Drawing.Size(281, 20);
             this.tillIDTxt.TabIndex = 54;
@@ -125,7 +125,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(49, 33);
+            this.label14.Location = new System.Drawing.Point(46, 59);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(48, 20);
             this.label14.TabIndex = 53;
@@ -138,7 +138,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(316, 36);
+            this.button3.Location = new System.Drawing.Point(313, 62);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(46, 34);
             this.button3.TabIndex = 57;
@@ -170,7 +170,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(190, 277);
+            this.label7.Location = new System.Drawing.Point(202, 313);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(186, 20);
             this.label7.TabIndex = 100;
@@ -181,7 +181,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.SandyBrown;
-            this.label6.Location = new System.Drawing.Point(92, 277);
+            this.label6.Location = new System.Drawing.Point(104, 313);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 23);
             this.label6.TabIndex = 99;
@@ -191,7 +191,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 277);
+            this.label5.Location = new System.Drawing.Point(58, 313);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 20);
             this.label5.TabIndex = 98;
@@ -200,9 +200,9 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.label8.BackColor = System.Drawing.Color.Gold;
             this.label8.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(1148, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(24, 23);
@@ -214,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1184, 556);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -225,6 +225,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SalesReportScreenAttendant";
             this.Text = "SalesReportScreenAttendant";
+            this.Load += new System.EventHandler(this.SalesReportScreenAttendant_Load);
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.salesDataGridView)).EndInit();
             this.panel11.ResumeLayout(false);
