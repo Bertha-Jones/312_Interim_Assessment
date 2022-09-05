@@ -100,5 +100,23 @@ namespace InventorySystem2
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void adminNameTxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SalesReportScreen user = new SalesReportScreen();
+            user.Show();
+                
+        }
     }
 }
