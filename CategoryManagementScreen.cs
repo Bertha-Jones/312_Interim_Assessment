@@ -267,7 +267,7 @@ namespace InventorySystem2
         private void label7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdministratorHomeScreen admin = new AdministratorHomeScreen();
+            AdministratorHomeScreen5 admin = new AdministratorHomeScreen5();
             admin.Show();
         }
 
