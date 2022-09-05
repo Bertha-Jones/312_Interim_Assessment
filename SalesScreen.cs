@@ -31,21 +31,24 @@ namespace InventorySystem2
         public Label button3;
         public Label button4;
         public Label button5;
+        private object tillIDTxt;
+
         public SalesScreen()
         {
             InitializeComponent();
             instance = this;
-            button = userIDTxt;
-            button2 = startTimeTxt;
-            button3 = dateTxt;
-            button4 = tillIDTxt;
-            button5 = attendantNameTxt;
+            //button = userIDTxt;
+            //button2 = startTimeTxt;
+            //button3 = dateTxt;
+            //button4 = tillIDTxt;
+            //button5 = attendantNameTxt;
             this.FormBorderStyle = FormBorderStyle.None;
             this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 50, 50));
         }
+        /*
         private void fetchSalesData()
         {
-            string query = "select * from sales where tillID = '"+tillIDTxt.Text+"' ";
+            string query = "select * from sales where tillID = '" + tillIDTxt.Text + "' ";
             DataSet ds = new DataSet();
             DataView dv;
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -70,7 +73,7 @@ namespace InventorySystem2
 
 
         }
-
+        */
         private void fetchProductData()
         {
             string query = "select * from product ";
@@ -123,7 +126,8 @@ namespace InventorySystem2
                     }
                     else
                     {*/
-                        string query = "insert into `sales` (`productName`, `productPrice`, `amount`, `total`, `tillID`) values ('" + productNameTxt.Text + "', '" + sUnitPriceTxt.Text + "','" + saleQuantityTxt.Text + "','" + sTotaltxt.Text + "','" + tillIDTxt.Text + "')";
+                        //string query = "insert into `sales` (`productName`, `productPrice`, `amount`, `total`, `tillID`) values ('" + productNameTxt.Text + "', '" + sUnitPriceTxt.Text + "','" + saleQuantityTxt.Text + "','" + sTotaltxt.Text + "','" + tillIDTxt.Text + "')";
+                        string query = "INSERT INTO sales(productName, productPrice, amount, total) VALUES('" + productNameTxt.Text + "', '" + sUnitPriceTxt.Text + "', '" + saleQuantityTxt.Text + "', '" + sTotaltxt.Text + "')";
                         command = new MySqlCommand(query, database.connection);
                         command.ExecuteNonQuery();
                         if (saleQuantityTxt.Text != "")
@@ -141,21 +145,22 @@ namespace InventorySystem2
                         }
                         MessageBox.Show("added to Sales");
                         database.closeConnection();
-                        fetchSalesData();
+                        //fetchSalesData();
                         fetchProductData();
-                    /*}
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }*/
+                /*}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }*/
                 /*if (saleQuantityTxt.Text !="")
                 {
                     
                 }
                 else
                 {
-                    string query = "insert into `sales` (`productName`, `productPrice`, `amount`, `total`, `tillID`) values ('" + productNameTxt.Text + "', '" + sUnitPriceTxt.Text + "','" + saleQuantityTxt.Text + "','" + sTotaltxt.Text + "','" + tillIDTxt.Text + "')";
+                    // string query = "insert into `sales` (`productName`, `productPrice`, `amount`, `total`, `tillID`) values ('" + productNameTxt.Text + "', '" + sUnitPriceTxt.Text + "','" + saleQuantityTxt.Text + "','" + sTotaltxt.Text + "','" + tillIDTxt.Text + "')";
+                    string query = "insert into sales (productName, productPrice, amount, total, tillID) values ('" + productNameTxt.Text + "', '" + sUnitPriceTxt.Text + "','" + saleQuantityTxt.Text + "','" + sTotaltxt.Text + "','" + tillIDTxt.Text + "')";
                     command = new MySqlCommand(query, database.connection);
                     command.ExecuteNonQuery();
                     if (saleQuantityTxt.Text != "")
@@ -198,7 +203,7 @@ namespace InventorySystem2
         private void SalesScreen_Load(object sender, EventArgs e)
         {
             fetchProductData();
-            fetchSalesData();
+            //fetchSalesData();
         }
 
         private void stockManagementButton_Click(object sender, EventArgs e)
@@ -226,7 +231,8 @@ namespace InventorySystem2
             database.openConnection();
             MySqlCommand command;
 
-            string query = "UPDATE `till` SET `endTime` = '"+closeTimeTxt.Text+"' , `totalMade` = '"+sTotaltxt.Text+"' , `tillStatus` = 'Closed' WHERE `till`.`tillID` = '"+tillIDTxt.Text+"';";
+            //string query = "UPDATE `till` SET `endTime` = '"+closeTimeTxt.Text+"' , `totalMade` = '"+sTotaltxt.Text+"' , `tillStatus` = 'Closed' WHERE `till`.`tillID` = '"+tillIDTxt.Text+"';";
+            string query = "UPDATE product set endTime='" + closeTimeTxt.Text + "',totalMade='" + sTotaltxt.Text + "',tillStatus='" + "Closed" + "' WHERE endTime='" + closeTimeTxt.Text + "'";
             command = new MySqlCommand(query,database.connection);
             command.ExecuteNonQuery();
             MessageBox.Show("Successfully ended session");
@@ -270,6 +276,21 @@ namespace InventorySystem2
         {
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.ShowDialog();
+        }
+
+        private void stockDataGridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void productNameTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
