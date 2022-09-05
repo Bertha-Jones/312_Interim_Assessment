@@ -48,7 +48,6 @@
             this.productDataGridView = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.stockDataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -60,19 +59,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.userIDTxt = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.startTimeTxt = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.dateTxt = new System.Windows.Forms.Label();
             this.closeTimeTxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.tillIDTxt = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.stockDataGridView = new System.Windows.Forms.DataGridView();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.attendantNameTxt = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -82,11 +75,10 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).BeginInit();
             this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.panel17.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +91,7 @@
             this.productNameTxt.Name = "productNameTxt";
             this.productNameTxt.Size = new System.Drawing.Size(281, 20);
             this.productNameTxt.TabIndex = 96;
+            this.productNameTxt.TextChanged += new System.EventHandler(this.productNameTxt_TextChanged);
             // 
             // panel4
             // 
@@ -142,6 +135,7 @@
             this.sDateTimePicker1.Name = "sDateTimePicker1";
             this.sDateTimePicker1.Size = new System.Drawing.Size(230, 27);
             this.sDateTimePicker1.TabIndex = 107;
+            this.sDateTimePicker1.Value = new System.DateTime(2022, 9, 4, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -186,14 +180,14 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel3.BackColor = System.Drawing.Color.Gold;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.removeButton);
             this.panel3.Controls.Add(this.addButton);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.searchButton);
             this.panel3.Controls.Add(this.UpdateButton);
-            this.panel3.Location = new System.Drawing.Point(90, 209);
+            this.panel3.Location = new System.Drawing.Point(812, 200);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(437, 70);
             this.panel3.TabIndex = 98;
@@ -202,7 +196,7 @@
             // 
             this.removeButton.BackColor = System.Drawing.Color.Black;
             this.removeButton.ForeColor = System.Drawing.Color.White;
-            this.removeButton.Location = new System.Drawing.Point(228, 12);
+            this.removeButton.Location = new System.Drawing.Point(117, 12);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(94, 42);
             this.removeButton.TabIndex = 58;
@@ -236,12 +230,13 @@
             // 
             this.UpdateButton.BackColor = System.Drawing.Color.Black;
             this.UpdateButton.ForeColor = System.Drawing.Color.White;
-            this.UpdateButton.Location = new System.Drawing.Point(128, 12);
+            this.UpdateButton.Location = new System.Drawing.Point(228, 12);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(94, 42);
             this.UpdateButton.TabIndex = 59;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = false;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // S
             // 
@@ -259,12 +254,12 @@
             this.productDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.productDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productDataGridView.GridColor = System.Drawing.Color.MediumTurquoise;
-            this.productDataGridView.Location = new System.Drawing.Point(26, 54);
+            this.productDataGridView.GridColor = System.Drawing.Color.Black;
+            this.productDataGridView.Location = new System.Drawing.Point(23, 12);
             this.productDataGridView.Name = "productDataGridView";
             this.productDataGridView.RowHeadersWidth = 51;
             this.productDataGridView.RowTemplate.Height = 29;
-            this.productDataGridView.Size = new System.Drawing.Size(594, 305);
+            this.productDataGridView.Size = new System.Drawing.Size(602, 343);
             this.productDataGridView.TabIndex = 102;
             this.productDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productDataGridView_CellContentClick);
             // 
@@ -287,19 +282,6 @@
             this.label7.Size = new System.Drawing.Size(113, 20);
             this.label7.TabIndex = 94;
             this.label7.Text = "Unit Price(GHc):";
-            // 
-            // stockDataGridView
-            // 
-            this.stockDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.stockDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.stockDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.stockDataGridView.GridColor = System.Drawing.Color.Black;
-            this.stockDataGridView.Location = new System.Drawing.Point(19, 6);
-            this.stockDataGridView.Name = "stockDataGridView";
-            this.stockDataGridView.RowHeadersWidth = 51;
-            this.stockDataGridView.RowTemplate.Height = 29;
-            this.stockDataGridView.Size = new System.Drawing.Size(518, 346);
-            this.stockDataGridView.TabIndex = 97;
             // 
             // panel1
             // 
@@ -387,7 +369,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.AliceBlue;
+            this.label1.BackColor = System.Drawing.Color.Gold;
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(719, 706);
             this.label1.Name = "label1";
@@ -398,7 +380,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.AliceBlue;
+            this.textBox1.BackColor = System.Drawing.Color.Gold;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(812, 699);
@@ -410,10 +392,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.BurlyWood;
+            this.label8.BackColor = System.Drawing.Color.Gold;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(1360, 6);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(29, 28);
@@ -433,64 +415,9 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // userIDTxt
-            // 
-            this.userIDTxt.AutoSize = true;
-            this.userIDTxt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.userIDTxt.ForeColor = System.Drawing.Color.IndianRed;
-            this.userIDTxt.Location = new System.Drawing.Point(85, 19);
-            this.userIDTxt.Name = "userIDTxt";
-            this.userIDTxt.Size = new System.Drawing.Size(63, 25);
-            this.userIDTxt.TabIndex = 32;
-            this.userIDTxt.Text = "label9";
-            this.userIDTxt.Click += new System.EventHandler(this.userIDTxt_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(156, 23);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 20);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "Started at :";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // startTimeTxt
-            // 
-            this.startTimeTxt.AutoSize = true;
-            this.startTimeTxt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.startTimeTxt.ForeColor = System.Drawing.Color.IndianRed;
-            this.startTimeTxt.Location = new System.Drawing.Point(242, 18);
-            this.startTimeTxt.Name = "startTimeTxt";
-            this.startTimeTxt.Size = new System.Drawing.Size(73, 25);
-            this.startTimeTxt.TabIndex = 35;
-            this.startTimeTxt.Text = "label12";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(19, 23);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 20);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "User ID :";
-            // 
-            // dateTxt
-            // 
-            this.dateTxt.AutoSize = true;
-            this.dateTxt.ForeColor = System.Drawing.Color.Black;
-            this.dateTxt.Location = new System.Drawing.Point(1048, 34);
-            this.dateTxt.Name = "dateTxt";
-            this.dateTxt.Size = new System.Drawing.Size(41, 20);
-            this.dateTxt.TabIndex = 37;
-            this.dateTxt.Text = "Date";
-            this.dateTxt.Visible = false;
-            // 
             // closeTimeTxt
             // 
-            this.closeTimeTxt.BackColor = System.Drawing.Color.AliceBlue;
+            this.closeTimeTxt.BackColor = System.Drawing.Color.Gold;
             this.closeTimeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.closeTimeTxt.ForeColor = System.Drawing.Color.Black;
             this.closeTimeTxt.Location = new System.Drawing.Point(1022, 697);
@@ -502,24 +429,13 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.AliceBlue;
+            this.label9.BackColor = System.Drawing.Color.Gold;
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(927, 705);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(98, 20);
             this.label9.TabIndex = 38;
             this.label9.Text = "Closing Time:";
-            // 
-            // tillIDTxt
-            // 
-            this.tillIDTxt.AutoSize = true;
-            this.tillIDTxt.ForeColor = System.Drawing.Color.Black;
-            this.tillIDTxt.Location = new System.Drawing.Point(902, 12);
-            this.tillIDTxt.Name = "tillIDTxt";
-            this.tillIDTxt.Size = new System.Drawing.Size(41, 20);
-            this.tillIDTxt.TabIndex = 40;
-            this.tillIDTxt.Text = "tillID";
-            this.tillIDTxt.Visible = false;
             // 
             // panel11
             // 
@@ -541,7 +457,7 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel13.BackColor = System.Drawing.Color.Gold;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel13.Controls.Add(this.stockDataGridView);
             this.panel13.Location = new System.Drawing.Point(31, 305);
@@ -549,9 +465,23 @@
             this.panel13.Size = new System.Drawing.Size(547, 357);
             this.panel13.TabIndex = 103;
             // 
+            // stockDataGridView
+            // 
+            this.stockDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.stockDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.stockDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.stockDataGridView.GridColor = System.Drawing.Color.Black;
+            this.stockDataGridView.Location = new System.Drawing.Point(15, 12);
+            this.stockDataGridView.Name = "stockDataGridView";
+            this.stockDataGridView.RowHeadersWidth = 51;
+            this.stockDataGridView.RowTemplate.Height = 29;
+            this.stockDataGridView.Size = new System.Drawing.Size(512, 329);
+            this.stockDataGridView.TabIndex = 97;
+            this.stockDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockDataGridView_CellContentClick_1);
+            // 
             // panel14
             // 
-            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.BackColor = System.Drawing.Color.Gold;
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel14.Controls.Add(this.productDataGridView);
             this.panel14.Location = new System.Drawing.Point(679, 305);
@@ -559,22 +489,9 @@
             this.panel14.Size = new System.Drawing.Size(654, 368);
             this.panel14.TabIndex = 104;
             // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.BurlyWood;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel15.Controls.Add(this.userIDTxt);
-            this.panel15.Controls.Add(this.label11);
-            this.panel15.Controls.Add(this.startTimeTxt);
-            this.panel15.Controls.Add(this.label13);
-            this.panel15.Location = new System.Drawing.Point(884, 35);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(322, 55);
-            this.panel15.TabIndex = 105;
-            // 
             // panel16
             // 
-            this.panel16.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel16.BackColor = System.Drawing.Color.Gold;
             this.panel16.Location = new System.Drawing.Point(681, 693);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(473, 54);
@@ -594,11 +511,11 @@
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.Gold;
+            this.panel17.BackColor = System.Drawing.Color.Transparent;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel17.Controls.Add(this.attendantNameTxt);
             this.panel17.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.panel17.Location = new System.Drawing.Point(103, 26);
+            this.panel17.Location = new System.Drawing.Point(92, 29);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(322, 55);
             this.panel17.TabIndex = 106;
@@ -619,12 +536,13 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.Goldenrod;
             this.button6.Location = new System.Drawing.Point(727, 785);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(94, 29);
             this.button6.TabIndex = 107;
             this.button6.Text = "Print";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // SalesScreen
@@ -640,10 +558,8 @@
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.tillIDTxt);
             this.Controls.Add(this.closeTimeTxt);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTxt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox1);
@@ -651,7 +567,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel16);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -662,13 +577,11 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.productDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.stockDataGridView)).EndInit();
             this.panel14.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.ResumeLayout(false);
@@ -696,20 +609,13 @@
         private DataGridView productDataGridView;
         private Label label3;
         private Label label7;
-        private DataGridView stockDataGridView;
         private Panel panel1;
         private Label label1;
         private TextBox textBox1;
         private Label label8;
         private Button button1;
-        private Label userIDTxt;
-        private Label label11;
-        private Label startTimeTxt;
-        private Label label13;
-        private Label dateTxt;
         private TextBox closeTimeTxt;
         private Label label9;
-        private Label tillIDTxt;
         private Panel panel5;
         private Panel panel10;
         private Panel panel8;
@@ -721,12 +627,12 @@
         private Panel panel12;
         private Panel panel13;
         private Panel panel14;
-        private Panel panel15;
         private Panel panel16;
         private Label attendantNameTxt;
         private Panel panel17;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintPreviewDialog printPreviewDialog1;
         private Button button6;
+        private DataGridView stockDataGridView;
     }
 }
